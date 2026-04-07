@@ -16,8 +16,10 @@ platform_do_upgrade() {
 	hpe,msm460|\
 	ocedo,panda|\
 	sophos,red-15w-rev1|\
+	sophos,red-15w-rev1|\
 	watchguard,firebox-t10|\
 	watchguard,firebox-t15|\
+	sophos,red-50-rev1|\
 	watchguard,xtm330)
 		nand_do_upgrade "$1"
 		;;
