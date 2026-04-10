@@ -1,7 +1,5 @@
-Index: linux-6.12.77/arch/powerpc/platforms/85xx/Kconfig
-===================================================================
---- linux-6.12.77.orig/arch/powerpc/platforms/85xx/Kconfig
-+++ linux-6.12.77/arch/powerpc/platforms/85xx/Kconfig
+--- a/arch/powerpc/platforms/85xx/Kconfig
++++ b/arch/powerpc/platforms/85xx/Kconfig
 @@ -265,6 +265,16 @@ config RED_15W_REV1
  
  	  This board is a wireless VPN router with a Freescale P1010 SoC.
@@ -19,10 +17,8 @@ Index: linux-6.12.77/arch/powerpc/platforms/85xx/Kconfig
  config STX_GP3
  	bool "Silicon Turnkey Express GP3"
  	help
-Index: linux-6.12.77/arch/powerpc/platforms/85xx/Makefile
-===================================================================
---- linux-6.12.77.orig/arch/powerpc/platforms/85xx/Makefile
-+++ linux-6.12.77/arch/powerpc/platforms/85xx/Makefile
+--- a/arch/powerpc/platforms/85xx/Makefile
++++ b/arch/powerpc/platforms/85xx/Makefile
 @@ -34,6 +34,7 @@ obj-$(CONFIG_FIREBOX_T1X) += firebox_t1x
  obj-$(CONFIG_CORENET_GENERIC)   += corenet_generic.o
  obj-$(CONFIG_FB_FSL_DIU)	+= t1042rdb_diu.o
