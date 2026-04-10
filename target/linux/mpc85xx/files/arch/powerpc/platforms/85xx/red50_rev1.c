@@ -67,16 +67,9 @@ static void __init red_50_rev1_setup_arch(void)
 
 machine_arch_initcall(sophos_red50, mpc85xx_common_publish_devices);
 
-/*
- * Called very early, device-tree isn't unflattened
- */
-static int __init red_50_rev1_probe(void)
-{
-	return of_machine_is_compatible("sophos,red-50-rev1");
-}
-
 define_machine(sophos_red50) {
 	.name			= "P1020 RDB",
+	.compatible		= "sophos,red-50-rev1",
 	.probe			= red_50_rev1_probe,
 	.setup_arch		= red_50_rev1_setup_arch,
 	.init_IRQ		= red_50_rev1_pic_init,
